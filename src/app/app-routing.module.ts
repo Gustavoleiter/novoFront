@@ -1,9 +1,9 @@
 
+import { ListarProdutosComponent } from './components/produto/listar-produtos/listar-produtos.component';
+import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListarProdutosComponent } from './components/produtos/listar-produtos/listar-produtos.component';
-import { HomeComponent } from './template/home/home.component';
-import { CadastrarProdutoComponent } from './components/produtos/cadastrar-produto/cadastrar-produto.component';
+import { CadastrarProdutoComponent } from './components/produto/cadastrar-produto/cadastrar-produto.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
