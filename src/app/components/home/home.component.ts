@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent
 {
+
+  aprovado: string = "../../../assets/aprovado.jpg"
+  namedia: string = "../../../assets/namedia.jpg"
+  reprovado: string = "../../../assets/reprovado.jpg"
 constructor() {
 
               }
