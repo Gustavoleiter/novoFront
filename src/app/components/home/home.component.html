@@ -1,19 +1,52 @@
-<h1>Seja bem vindo ao curso de Angular!</h1>
-<a></a>
+
+
+<h1>Alunos do segundo semestre de 2023 </h1>
+
 <div class="row">
-<div class="card-fluid" style="width: 18rem;">
-  <img [src] = "aprovado" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Voce foi aprovado.</p>
-  </div>
-  <div class="card-fluid" style="width: 18rem;">
-    <img [src] = "namedia" class="card-img-top" alt="...">
+<div class="col-md-4">
+  <div class="card border shadow w-1 p-1" style="width: 18rem;">
+    <img [src] = "perfil" class="card-img-top" alt="..." >
     <div class="card-body">
-      <p class="card-text">Voce foi aprovado.</p>
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Média de notas = <strong>{{media}}</strong></p>
+      <a href="#" class="btn btn-primary"  *ngIf="media >= 7 ;else elseBlock">aprovado</a>
     </div>
-    <div class="card-fluid" style="width: 18rem;">
-      <img [src] = "reprovado" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Voce foi aprovado.</p>
-      </div>
+    <ng-template #elseBlock>
+      <a href="#" class="btn btn-danger">reprovado</a>
+    </ng-template>
+  </div>
 </div>
+
+
+<div class="col-md-4">
+  <div class="card border shadow  w-1 p-1" style="width: 18rem;">
+    <img [src] = "perfil" class="card-img-top" alt="..." >
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Média de notas = <strong>{{media1}}</strong></p>
+      <a href="#" class="btn btn-primary"  *ngIf="media1 >= 7 ;else elseBlock">aprovado</a>
+    </div>
+    <ng-template #elseBlock>
+      <a href="#" class="btn btn-danger">reprovado</a>
+    </ng-template>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card border shadow w-1 p-1" style="width: 18rem;">
+    <img [src] = "perfil" class="card-img-top" alt="..." >
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Média de notas = <strong>{{media2}}</strong></p>
+      <a href="#" class="btn btn-primary"  *ngIf="media2 >= 7 ;else elseBlock">aprovado</a>
+      <ng-template #elseBlock>
+        <a href="#" class="btn btn-danger">reprovado</a>
+      </ng-template>
+    </div>
+  </div>
+</div>
+</div>
+
+
+

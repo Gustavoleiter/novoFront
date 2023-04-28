@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  display:flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #fffefe, #616986, #110255);
+  height: 48rem;
+}

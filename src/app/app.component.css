@@ -6,3 +6,12 @@
 .card{
   align-items: center;
 }
+
+body{
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #FFDAB9, #FFA500, #FF6347);
+  height: 100%;
+}
+

@@ -7,14 +7,33 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent
 {
+  nta = 5;
+  ntb = 7;
+  ntc = 1;
+  ntd = 1;
+  media = ( this.nta + this.ntb + this.ntc + this.ntd )/ 4;
 
+  nta1 = 5;
+  ntb1 = 7;
+  ntc1 = 10;
+  ntd1 = 5;
+  media1 = ( this.nta1 + this.ntb1 + this.ntc1 + this.ntd1 )/ 4;
+
+  nta2 = 5;
+  ntb2 = 7;
+  ntc2 = 10;
+  ntd2 = 10;
+  media2 = ( this.nta2 + this.ntb2 + this.ntc2 + this.ntd2 )/ 4;
+  
   aprovado: string = "../../../assets/aprovado.jpg"
   namedia: string = "../../../assets/namedia.jpg"
   reprovado: string = "../../../assets/reprovado.jpg"
+  perfil: string = "../../../assets/main.jpg"
 constructor() {
 
               }
 }
+
 
 /*ex 3
 var a = 10;
